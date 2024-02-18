@@ -1,0 +1,47 @@
+.header_container {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(207, 233, 254, 0.17);
+  padding: 0 50px;
+  margin: 0 auto;
+  border-radius: 0 0 30px 30px;
+  min-height: 78px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header_link {
+  color: white;
+}
+
+.header_link:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.header_logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_group {
+  display: flex;
+  gap: 20px;
+}
+
+.header_text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_heading,
+.header_description {
+  margin: 0;
+}
