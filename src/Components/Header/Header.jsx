@@ -1,40 +1,45 @@
 import "./header.css";
 import Button from "../Button/Button";
 import linkedIn from "../../img/linkedin.svg";
+import LanguageSelector from "../LanguageSelector/LanguageSelector"
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
+  const { t } = useTranslation();
+
   return (
-    <section className="header_container">
-        <div className="header_text-wrapper">
-      <h2 className="header_heading">Eldar Moldazhanov</h2>
-      <p className="header_description">practice makes perfect</p>
+    <section className="header__container">
+        <div className="header__text-wrapper">
+      <h2 className="header__heading">{t('name')}</h2>
+      <p className="header__description">{t('slogan')}</p>
       </div>
       <ul>
         <li>
-          <a className="header_link" href="#">
-            Home
+          <a className="header__link" href="#">
+            {t('Home')}
           </a>
         </li>
         <li>
-          <a className="header_link" href="#">
-            About Me
+          <a className="header__link" href="#">
+          {t('About')}
           </a>
         </li>
         <li>
-          <a className="header_link" href="#">
-           Portfolio
+          <a className="header__link" href="#">
+          {t('Portfolio')}
           </a>
         </li>
       </ul>
-      <div className="header_group">
+      <div className="header__group">
+        <LanguageSelector />
         <a
-          className="header_logo-link"
+          className="header__logo-link"
           href="https://www.linkedin.com/in/eldar-moldazhanov-2a142928a/"
           target="_blank"
         >
-          <img src={linkedIn} alt={"result"} width="40" height="40" />
+          <img src={linkedIn} alt={"linked in logo."} width="40" height="40" />
         </a>
-        <Button>Contact Me</Button>
+        <Button>{t('HeaderButtonContact')}</Button>
       </div>
     </section>
   );

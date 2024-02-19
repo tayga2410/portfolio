@@ -1,0 +1,30 @@
+.hero__container {
+    padding: 100px 0 50px;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__title {
+    border: 1px solid white;
+    max-width: 414px;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 35px;
+
+}
+
+.hero__sub-title {
+    max-width: 447px;
+    font-size: 35px;
+    min-height: 105px;
+}
+
+.hero__description {
+    max-width: 450px;
+    font-size: 22px;
+}
+
+.hero__image {
+    object-fit: cover;
+}

@@ -1,0 +1,10 @@
+.language-selector__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-selector__icon {
+    cursor: pointer;
+    height: 30px;
+}
