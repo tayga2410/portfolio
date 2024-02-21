@@ -11,17 +11,28 @@ function LanguageSelector() {
     i18n.changeLanguage(lng);
   };
 
+  const handleLanguageChange = (lng) => (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      changeLanguage(lng);
+    }
+  };
+
   return (
     <div className="language-selector__container">
       <span
         className="language-selector__icon"
         onClick={() => changeLanguage("en")}
+        onKeyDown={handleLanguageChange("en")}
+        tabIndex={0} 
       >
         <img src={ukflag} alt={"United Kingdom flag"} width="40" height="30" />
       </span>
       <span
         className="language-selector__icon"
         onClick={() => changeLanguage("ru")}
+        onKeyDown={handleLanguageChange("ru")}
+        tabIndex={0} 
       >
         <img src={ruflag} alt={"Russian Federation flag"} width="40" height="30" />
       </span>

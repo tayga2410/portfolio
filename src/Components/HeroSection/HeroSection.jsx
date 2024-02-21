@@ -4,14 +4,11 @@ import hero from "../../img/hero.png";
 import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
-    const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [displayText, setDisplayText] = useState("");
-  const introText = "Hi! I'm Eldar and I'm ";
-  const phrasesToType = [
-    "Junior Frontend Developer",
-    "Quick Learner",
-    "not afraid of something new",
-  ];
+  const introText = t("introText");
+  const phrasesToType = t("phrasesToType", { returnObjects: true });
+
   const [phraseIndex, setPhraseIndex] = useState(0);
 
   useEffect(() => {
@@ -43,13 +40,15 @@ const HeroSection = () => {
         <h3 className="hero__sub-title">{displayText}</h3>
         <p className="hero__description">{t("hero-description")}</p>
       </div>
+      <div className="hero__image-container">
       <img
         className="hero__image"
         src={hero}
         alt={"Kazakhstan flag"}
-        width="600"
-        height="461"
+        width=""
+        height=""
       />
+      </div>
     </section>
   );
 };

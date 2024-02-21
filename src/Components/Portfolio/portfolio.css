@@ -1,0 +1,41 @@
+.portfolio {
+  padding: 0 0 100px;
+}
+
+.portfolio__title {
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.portfolio__swiper-title {
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+.portfolio__image {
+  width: 540px;
+  height: 300px;
+}
+
+.swiper {
+  padding: 0 0 50px;
+}
+
+.swiper-pagination {
+  background-color: white;
+  width: 50px;
+  border-radius: 16px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 100px;
+  margin: 0 auto;
+  left: 50%;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: black;
+}

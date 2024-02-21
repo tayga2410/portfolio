@@ -17,12 +17,14 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 30px;
-  width: 312px;
+  width: 472px;
   justify-content: space-between;
+  padding: 0;
 }
 
 .header__link {
   color: white;
+  font-size: 22px;
 }
 
 .header__link:hover {

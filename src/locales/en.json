@@ -1,16 +1,25 @@
 {
-    "name": "Eldar Moldazhanov",
-    "slogan": "practice makes perfect",
-    "Main": "Main Page",
-    "About": "About Me",
-    "Portfolio": "Portfolio",
-    "HeaderButtonContact": "Contact Me",
-    "welcome": "Welcome to my Portfolio",
-    "introText": "Hi! I'm Eldar and I'm ",
-    "phrasesToType": [
-      "Junior Frontend Developer",
-      "Quick Learner",
-      "not afraid of something new"
-    ],
-    "hero-description": "I think the background of a person is very important, but a lot of text is also considered as `not good`. I'm a former businessman from Kazakhstan, but now I decided to change my life dramatically and I'm passionate about possessing new information about frontend development and IT sphere in general"
+  "name": "Eldar Moldazhanov",
+  "slogan": "practice makes perfect",
+  "Main": "Main Page",
+  "About": "About Me",
+  "Skills": "Skills",
+  "Portfolio": "Portfolio",
+  "HeaderButtonContact": "Contact Me",
+  "welcome": "Welcome to my Portfolio",
+  "introText": "Hi! I'm Eldar and I'm ",
+  "phrasesToType": [
+    "Junior Frontend Developer",
+    "Quick Learner",
+    "not afraid of something new"
+  ],
+  "hero-description": "I think the background of a person is very important, but a lot of text is also considered as `not good`. I'm a former businessman from Kazakhstan, but now I decided to change my life dramatically and I'm passionate about possessing new information about frontend development and IT sphere in general",
+  "semantic": "Semantic layout",
+  "adaptive": "Adaptive layout on any device",
+  "BEM": "BEM methodology",
+  "libintegration": "Libraries integration",
+  "libexample": "For Example: swiper.js, tabs.js, accordion.js",
+  "compsep": "Components separation",
+  "multilang": "Multi-language pages",
+  "exp" : "Additional Experience"
 }

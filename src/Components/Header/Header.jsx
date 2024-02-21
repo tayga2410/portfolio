@@ -26,6 +26,11 @@ export default function Header() {
         </li>
         <li>
           <a className="header__link" href="#">
+          {t('Skills')}
+          </a>
+        </li>
+        <li>
+          <a className="header__link" href="#">
           {t('Portfolio')}
           </a>
         </li>
