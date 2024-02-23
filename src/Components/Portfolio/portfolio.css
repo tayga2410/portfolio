@@ -23,13 +23,13 @@
 
 .swiper-pagination {
   background-color: white;
-  width: 50px;
+  width: 130px;
   border-radius: 16px;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: 100px;
+  width: 124px;
   margin: 0 auto;
   left: 50%;
 }

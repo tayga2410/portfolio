@@ -1,28 +1,33 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css/bundle";
 import "./portfolio.css";
 import internship from "../../img/internship.png";
 import lifetour from "../../img/lifetour.png";
 import fitness from "../../img/fitness.png";
 import drink2go from "../../img/drink2go.png";
 import sedona from "../../img/sedona.png";
+import { useTranslation } from "react-i18next";
 
 export default function PortfolioSection() {
+  const { t } = useTranslation()
+
   return (
     <section className="portfolio">
-      <h2 className="portfolio__title">Portfolio</h2>
+      <h2 className="portfolio__title">{t("Portfolio")}</h2>
       <Swiper
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
+        loop={true}
         spaceBetween={50}
         slidesPerView={3}
+        autoplay={{
+            delay: 3000,
+            disableOnInteraction: false
+        }}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
-            <h3 className="portfolio__swiper-title">Internship Project</h3>
+            <h3 className="portfolio__swiper-title">{t("Internship Project")}</h3>
           <a
             href="https://tayga2410.github.io/internship-project/"
             target="_blank"
@@ -35,7 +40,7 @@ export default function PortfolioSection() {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">Lifetour Project</h3>
+        <h3 className="portfolio__swiper-title">{t("Lifetour Project")}</h3>
           <a
             href="https://tayga2410.github.io/lifetour-project/"
             target="_blank"
@@ -48,7 +53,7 @@ export default function PortfolioSection() {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">Fitness Project</h3>
+        <h3 className="portfolio__swiper-title">{t("Fitness Project")}</h3>
           <a
             href="https://tayga2410.github.io/fitness-project/"
             target="_blank"
@@ -61,7 +66,7 @@ export default function PortfolioSection() {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">Drink2go Project</h3>
+        <h3 className="portfolio__swiper-title">{t("Drink2go Project")}</h3>
           <a
             href="https://tayga2410.github.io/drink2go-project/"
             target="_blank"
@@ -74,7 +79,7 @@ export default function PortfolioSection() {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">Sedona Project</h3>
+        <h3 className="portfolio__swiper-title">{t("Sedona Project")}</h3>
           <a href="https://tayga2410.github.io/sedona-project/" target="_blank">
             <img
               className="portfolio__image"

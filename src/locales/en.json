@@ -21,5 +21,11 @@
   "libexample": "For Example: swiper.js, tabs.js, accordion.js",
   "compsep": "Components separation",
   "multilang": "Multi-language pages",
-  "exp" : "Additional Experience"
+  "exp" : "Additional Experience",
+  "Porfolio" : "Portfolio",
+  "Internship Project": "Internship project",
+  "Lifetour Project":"Travel company project",
+  "Fitness Project": "Fitness project",
+  "Drink2go Project": "Drink2go coffeeshop project",
+  "Sedona Project": "Sedona hotel project"
 }

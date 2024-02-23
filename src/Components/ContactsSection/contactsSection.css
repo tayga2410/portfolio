@@ -1,0 +1,43 @@
+.contacts {
+    padding: 0 0 100px;
+}
+
+.contacts__title {
+
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 30px;
+}
+
+.contacts__description {
+    text-align: start;
+    margin: 0 0 20px;
+}
+
+.contacts__text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts__link {
+    color: teal;
+}
+
+.contacts__link:hover {
+    color: white;
+}
+
+.contacts__text-link {
+    font-size: 25px;
+}
