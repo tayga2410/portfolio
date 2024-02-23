@@ -1,0 +1,23 @@
+footer {
+  padding: 0 0 50px;
+}
+
+.footer__container {
+  height: 56px;
+  color: rgb(7, 244, 244);
+  background-color: rgba(207, 233, 254, 0.17);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.footer__link {
+  color: white;
+  font-size: 22px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 20px;
+}

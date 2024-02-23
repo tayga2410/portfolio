@@ -1,8 +1,20 @@
 .hero__container {
-    padding: 100px 0 50px;
+    padding: 178px 0 50px;
     text-align: start;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.hero__container::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(249, 105, 14) 0%, rgb(102, 51, 153) 100%);
+    border: 0px;
+    height: 1px;
     width: 100%;
 }
 

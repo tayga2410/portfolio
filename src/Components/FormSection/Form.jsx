@@ -3,11 +3,13 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "../Button/Button";
 import classess from '../Button/Button.module.css';
+import { useTranslation } from "react-i18next";
 
 export default function Form() {
   const form = useRef();
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
+  const { t } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -44,19 +46,19 @@ export default function Form() {
   return (
     <div>
     <form className="form" ref={form} onSubmit={sendEmail} autoComplete="off" id="#form">
-      <label className="form__label">Your Name
+      <label className="form__label">{t("Your Name")} 
       <input className="form__input" type="text" name="user_name" />
       </label>
-      <label  className="form__label">Your Email
+      <label  className="form__label">{t("Your Email")} 
       <input className="form__input" type="email" name="user_email" />
       </label>
-      <label className="form__label">Your Message
+      <label className="form__label">{t("Your Message")} 
       <textarea className="form__textarea" name="message" />
       </label>
-      <Button className={classess.formButton} type="submit" value="Send">Submit</Button>
+      <Button className={classess.formButton} type="submit" value="Send">{t("Submit")}</Button>
     </form>
-     {isFormSubmitted && <p className="form__message">Thank you for your message!</p>}
-     {isFormError && <p className="form__message">Please, make sure all fields are filled</p>}
+     {isFormSubmitted && <p className="form__message">{t("Thank you for your message!")}</p>}
+     {isFormError && <p className="form__message">{t("Please, make sure all fields are filled")}</p>}
      </div>
   );
 }

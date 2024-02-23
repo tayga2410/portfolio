@@ -34,7 +34,8 @@ const HeroSection = () => {
   }, [phraseIndex]);
 
   return (
-    <section className="hero__container" id="about">
+    <section className="hero" id="about">
+      <div className="hero__container">
       <div className="hero__text-container">
         <h2 className="hero__title">{t("welcome")}</h2>
         <h3 className="hero__sub-title">{displayText}</h3>
@@ -48,6 +49,7 @@ const HeroSection = () => {
         width=""
         height=""
       />
+      </div>
       </div>
     </section>
   );

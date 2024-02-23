@@ -27,5 +27,14 @@
   "Lifetour Project":"Travel company project",
   "Fitness Project": "Fitness project",
   "Drink2go Project": "Drink2go coffeeshop project",
-  "Sedona Project": "Sedona hotel project"
+  "Sedona Project": "Sedona hotel project",
+  "Contacts": "Contacts",
+  "contactme": "Want to hire me? or just have a bit of conversation? Just fill out small form to contact! Drop me a line and I'll answer ASAP",
+  "Your Name": "Your Name",
+  "Your Email": "Your Email",
+  "Your Message": "Your Message",
+  "Submit": "Submit",
+  "Thank you for your message!": "Thank you for your message!",
+  "Please, make sure all fields are filled": "Please, make sure all fields are filled",
+  "Coded": "Created with react. By Eldar Moldazhanov"
 }

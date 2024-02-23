@@ -10,7 +10,8 @@
   position: fixed;
   top: 0;
   left: 100px;
-  width: 1720px;
+  width: 1640px;
+  max-width: 1640px;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }

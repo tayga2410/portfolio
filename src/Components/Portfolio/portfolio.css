@@ -1,5 +1,17 @@
 .portfolio {
   padding: 0 0 100px;
+  position: relative;
+}
+
+.portfolio::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgb(249, 105, 14) 0%, rgb(102, 51, 153) 100%);
+  border: 0px;
+  height: 1px;
+  width: 100%;
 }
 
 .portfolio__title {
