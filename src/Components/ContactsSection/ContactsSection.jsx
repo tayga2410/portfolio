@@ -2,11 +2,12 @@ import Form from "../FormSection/Form";
 import './contactsSection.css'
 import gmail from '../../img/gmail.png';
 import discord from '../../img/discord.png';
+import divider from '../../img/kz-decor.png';
 
 export default function ContactsSection() {
   return (
-    <section className="contacts">
-      <h2 className="contacts__title"></h2>
+    <section className="contacts" id="contacts">
+      <h2 className="contacts__title">Contacts</h2>
       <div className="contacts__wrapper">
         <div className="contacts__container">
           <p className="contacts__description">
@@ -28,6 +29,7 @@ export default function ContactsSection() {
             </a>
           </div>
         </div>
+        <img className="contacts__divider" src={divider} alt="" width="177" height="371" />
         <Form />
       </div>
     </section>

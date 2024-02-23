@@ -1,14 +1,27 @@
 import "./form.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "../Button/Button";
 import classess from '../Button/Button.module.css';
 
 export default function Form() {
   const form = useRef();
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isFormError, setIsFormError] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const userName = form.current.user_name.value.trim();
+    const email = form.current.user_email.value.trim();
+    const message = form.current.message.value.trim();
+
+    if (!userName || !message || ! email) {
+      setIsFormError(true);
+      setIsFormSubmitted(false);
+      return;
+    }
+
 
     emailjs
       .sendForm("service_ka5xeva", "template_qcft3ei", form.current, {
@@ -16,16 +29,21 @@ export default function Form() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          setIsFormSubmitted(true);
+          setIsFormError(false);
+          form.current.reset();
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          setIsFormSubmitted(false);
+          setIsFormError(true);
+          form.current.reset();
         }
       );
   };
 
   return (
-    <form className="form" ref={form} onSubmit={sendEmail} autoComplete="off">
+    <div>
+    <form className="form" ref={form} onSubmit={sendEmail} autoComplete="off" id="#form">
       <label className="form__label">Your Name
       <input className="form__input" type="text" name="user_name" />
       </label>
@@ -37,5 +55,8 @@ export default function Form() {
       </label>
       <Button className={classess.formButton} type="submit" value="Send">Submit</Button>
     </form>
+     {isFormSubmitted && <p className="form__message">Thank you for your message!</p>}
+     {isFormError && <p className="form__message">Please, make sure all fields are filled</p>}
+     </div>
   );
 }

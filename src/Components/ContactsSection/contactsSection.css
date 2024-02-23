@@ -3,7 +3,8 @@
 }
 
 .contacts__title {
-
+    font-size: 80px;
+    text-transform: uppercase;
 }
 
 .contacts__wrapper {

@@ -13,7 +13,7 @@ export default function PortfolioSection() {
   const { t } = useTranslation()
 
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="portfolio">
       <h2 className="portfolio__title">{t("Portfolio")}</h2>
       <Swiper
         modules={[Pagination, Autoplay]}

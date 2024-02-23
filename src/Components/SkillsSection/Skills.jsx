@@ -8,6 +8,7 @@ import react from "../../img/react.png";
 import npm from "../../img/npm.svg";
 import node from "../../img/nodejs.svg";
 import git from "../../img/github.svg";
+import vite from "../../img/vite.svg";
 import { useTranslation } from "react-i18next";
 
 export default function SkillsSection(active, onChange) {
@@ -20,7 +21,7 @@ export default function SkillsSection(active, onChange) {
   const { t } = useTranslation();
 
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <h2 className="skills__title">{t("Skills")}</h2>
       <div className="skills__header">
         <button
@@ -91,6 +92,7 @@ export default function SkillsSection(active, onChange) {
                     <li className="skills__sub-item"><img src={npm} alt="npm"></img></li>
                     <li className="skills__sub-item"><img src={node} alt="node.js"></img></li>
                     <li className="skills__sub-item"><img src={git} alt="github"></img></li>
+                    <li className="skills__sub-item"><img src={vite} alt="vite"></img></li>
                 </ul>
             </div>
     </section>

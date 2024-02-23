@@ -32,9 +32,7 @@ button:active {
 
 .formButton {
   width: 200px;
-    height: 41px;
-    border: none;
-    border-radius: 16px;
-    margin: 0 auto;
-    cursor: pointer;
+  height: 41px;
+  border-radius: 16px;
+  cursor: pointer;
 }

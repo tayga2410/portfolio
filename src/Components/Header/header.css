@@ -7,6 +7,16 @@
   padding: 0 50px 0 30px;
   border-radius: 0 0 30px 30px;
   min-height: 78px;
+  position: fixed;
+  top: 0;
+  left: 100px;
+  width: 1720px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.header__container--hidden {
+  transform: translateY(-100%);
 }
 
 .header__text-wrapper {
