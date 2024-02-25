@@ -27,4 +27,8 @@
 
 .container {
   padding: 0 100px;
+
+  @media screen and (max-width: 1439px) {
+    padding: 0 50px;
+  }
 }

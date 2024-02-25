@@ -10,7 +10,7 @@ import sedona from "../../img/sedona.png";
 import { useTranslation } from "react-i18next";
 
 export default function PortfolioSection() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section className="portfolio" id="portfolio">
@@ -19,15 +19,26 @@ export default function PortfolioSection() {
         modules={[Pagination, Autoplay]}
         loop={true}
         spaceBetween={50}
-        slidesPerView={3}
+        breakpoints={{
+          // when window width is >= 640px
+          320: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          1440: {
+            slidesPerView: 3,
+          },
+        }}
         autoplay={{
-            delay: 3000,
-            disableOnInteraction: false
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
       >
         <SwiperSlide>
-            <h3 className="portfolio__swiper-title">{t("Internship Project")}</h3>
           <a
             href="https://tayga2410.github.io/internship-project/"
             target="_blank"
@@ -38,9 +49,9 @@ export default function PortfolioSection() {
               alt="internship project"
             />
           </a>
+          <h3 className="portfolio__swiper-title">{t("Internship Project")}</h3>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">{t("Lifetour Project")}</h3>
           <a
             href="https://tayga2410.github.io/lifetour-project/"
             target="_blank"
@@ -51,9 +62,9 @@ export default function PortfolioSection() {
               alt="tour company project"
             />
           </a>
+          <h3 className="portfolio__swiper-title">{t("Lifetour Project")}</h3>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">{t("Fitness Project")}</h3>
           <a
             href="https://tayga2410.github.io/fitness-project/"
             target="_blank"
@@ -64,9 +75,9 @@ export default function PortfolioSection() {
               alt="fitness project"
             />
           </a>
+          <h3 className="portfolio__swiper-title">{t("Fitness Project")}</h3>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">{t("Drink2go Project")}</h3>
           <a
             href="https://tayga2410.github.io/drink2go-project/"
             target="_blank"
@@ -77,9 +88,9 @@ export default function PortfolioSection() {
               alt="coffeeshop project"
             />
           </a>
+          <h3 className="portfolio__swiper-title">{t("Drink2go Project")}</h3>
         </SwiperSlide>
         <SwiperSlide>
-        <h3 className="portfolio__swiper-title">{t("Sedona Project")}</h3>
           <a href="https://tayga2410.github.io/sedona-project/" target="_blank">
             <img
               className="portfolio__image"
@@ -87,6 +98,7 @@ export default function PortfolioSection() {
               alt="hotel project"
             />
           </a>
+          <h3 className="portfolio__swiper-title">{t("Sedona Project")}</h3>
         </SwiperSlide>
       </Swiper>
     </section>

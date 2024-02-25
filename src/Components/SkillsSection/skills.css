@@ -57,3 +57,15 @@
     width: 120px;
     height: auto;
 }
+
+@media screen and (max-width: 1439px) {
+  .skills__sub-list {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .skills__title {
+    font-size: 55px;
+  }
+}

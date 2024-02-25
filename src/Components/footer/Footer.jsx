@@ -9,23 +9,23 @@ export default function Footer() {
     <footer>
       <div className="footer__container">
         <span className="footer__copyright">&copy; {t("Coded")}</span>
-        <ul>
-          <li>
+        <ul className="footer__list">
+          <li className="footer__item">
             <a className="footer__link" href="#">
               {t("Home")}
             </a>
           </li>
-          <li>
+          <li className="footer__item">
             <a className="footer__link" href="#about">
               {t("About")}
             </a>
           </li>
-          <li>
+          <li className="footer__item">
             <a className="footer__link" href="#skills">
               {t("Skills")}
             </a>
           </li>
-          <li>
+          <li className="footer__item">
             <a className="footer__link" href="#portfolio">
               {t("Portfolio")}
             </a>

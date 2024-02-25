@@ -1,17 +1,21 @@
+.header--menu-closed {
+  display: none;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(207, 233, 254, 0.17);
   margin: 0 auto;
-  padding: 0 50px 0 30px;
+  padding: 0 50px;
   border-radius: 0 0 30px 30px;
   min-height: 78px;
   position: fixed;
   top: 0;
   left: 100px;
-  width: 1640px;
-  max-width: 1640px;
+  right: 100px;
+  max-width: 1588px;
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -24,13 +28,18 @@
   width: 264px;
 }
 
-ul {
+.header__text-wrapper--hidden {
+  display: none;
+}
+
+.header__menu {
   list-style-type: none;
   display: flex;
   gap: 30px;
   width: 472px;
   justify-content: space-between;
   padding: 0;
+  margin: 0 auto;
 }
 
 .header__link {
@@ -55,6 +64,10 @@ ul {
   align-items: center;
 }
 
+.header__group--hidden {
+  display: none;
+}
+
 .header__text-wrapper {
   display: flex;
   flex-direction: column;
@@ -76,4 +89,59 @@ ul {
 .header__option {
   color: black;
   padding: 10px 0;
+}
+
+.header__burger-icon {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__burger-menu--open .header__burger-icon:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.header__burger-menu--open .header__burger-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger-menu--open .header__burger-icon:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.header__menu--hidden {
+  display: none;
+}
+
+/* Показ бургер-меню */
+.header__burger-menu {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.header__burger-menu .header__burger-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1439px) {
+  .header__heading {
+    font-size: 16px;
+  }
+
+  .header__description {
+    font-size: 9px;
+  }
+
+  .header__menu {
+    position: absolute;
+    width: 74%;
+    top: 78px;
+    background-color: rgba(207, 233, 254, 0.17);
+    border-radius: 0 0 30px 30px;
+    height: 40px;
+    padding: 0 20px;
+  }
 }

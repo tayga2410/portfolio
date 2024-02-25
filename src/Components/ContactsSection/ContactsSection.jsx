@@ -3,7 +3,8 @@ import './contactsSection.css'
 import gmail from '../../img/gmail.png';
 import discord from '../../img/discord.png';
 import github from '../../img/github.svg';
-import divider from '../../img/kz-decor.png';
+import dividerdesktop from '../../img/kz-decor.png';
+import dividertablet from '../../img/kz-decor-tablet.png';
 import { useTranslation } from "react-i18next";
 
 export default function ContactsSection() {
@@ -39,7 +40,10 @@ export default function ContactsSection() {
             </a>
           </div>
         </div>
-        <img className="contacts__divider" src={divider} alt="" width="177" height="371" />
+        <picture>
+        <source media="(max-width: 1439px)" srcSet={dividertablet} />
+        <img className="contacts__divider" src={dividerdesktop} alt="" width="177" height="371" />
+        </picture>
         <Form />
       </div>
     </section>

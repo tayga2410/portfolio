@@ -58,3 +58,31 @@
     object-fit: cover;
     flex-shrink: 0;
 }
+
+@media screen and (max-width: 1439px) {
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__text-container {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .hero__image {
+       width: 650px;
+       max-width: unset;
+       height: 400px;
+    }
+
+    .hero__sub-title {
+        font-size: 27px;
+        min-height: unset;
+    }
+    
+
+    .hero__description {
+        font-size: 19px;
+    }
+    
+}

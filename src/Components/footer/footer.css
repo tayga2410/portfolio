@@ -3,13 +3,19 @@ footer {
 }
 
 .footer__container {
-  height: 56px;
+  height: 80px;
   color: rgb(7, 244, 244);
   background-color: rgba(207, 233, 254, 0.17);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
+  border-radius: 30px;
+}
+
+.footer__list {
+  display: flex;
+  gap: 30px;
 }
 
 .footer__link {
@@ -20,4 +26,26 @@ footer {
 .footer__socials {
     display: flex;
     gap: 20px;
+}
+
+@media screen and (max-width: 1439px) {
+
+  .footer__container {
+    padding: 0 20px;
+  }
+
+  .footer__list {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .footer__link {
+    color: white;
+    font-size: 14px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    width: 170px;
+  }
 }

@@ -51,3 +51,10 @@
   height: 15px;
   background: black;
 }
+
+
+@media screen and (max-width: 1439px) {
+  .portfolio__title {
+    font-size: 55px;
+  }
+}

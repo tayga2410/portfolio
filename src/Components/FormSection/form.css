@@ -32,3 +32,10 @@
 .form__button:hover {
     border: 1px solid teal;
 }
+
+@media screen and (max-width: 1439px) {
+    .form {
+        text-align: center;
+        align-items: center;
+    }
+}
