@@ -57,6 +57,14 @@ footer {
     padding: 20px 0;
   }
 
+  .footer__list {
+    flex-wrap: wrap;
+  }
+
+  .footer__link {
+    font-size: 22px;
+  }
+
   .footer__copyright {
     width: 140px;
   }

@@ -67,11 +67,17 @@
   .hero__container {
     flex-direction: column;
     padding: 50px 0;
+    text-align: center;
+    align-items: center;
   }
 
   .hero__text-container {
     max-width: unset;
     width: 100%;
+  }
+
+  .hero__image-container {
+    width: unset;
   }
 
   .hero__image {

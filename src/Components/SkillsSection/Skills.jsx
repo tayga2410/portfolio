@@ -29,25 +29,25 @@ export default function SkillsSection(active, onChange) {
             onClick={() => handleTabClick(0)}
             className={activeTab === 0 ? "active" : ""}
           >
-            <img src={html}></img>
+            <img src={html} alt="html5 icon"></img>
           </button>
           <button
             onClick={() => handleTabClick(1)}
             className={activeTab === 1 ? "active" : ""}
           >
-            <img src={css}></img>
+            <img src={css} alt="css3 icon"></img>
           </button>
           <button
             onClick={() => handleTabClick(2)}
             className={activeTab === 2 ? "active" : ""}
           >
-            <img src={js}></img>
+            <img src={js} alt="javascript icon"></img>
           </button>
           <button
             onClick={() => handleTabClick(3)}
             className={activeTab === 3 ? "active" : ""}
           >
-            <img src={react}></img>
+            <img src={react} alt="react icon"></img>
           </button>
         </div>
         <div className="skills__content">
