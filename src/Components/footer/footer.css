@@ -59,6 +59,7 @@ footer {
 
   .footer__list {
     flex-wrap: wrap;
+    max-width: 250px;
   }
 
   .footer__link {
