@@ -68,6 +68,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .contacts__container {
+    gap: 10px;
+  }
   .contacts__text-link {
     font-size: 12px;
   }
