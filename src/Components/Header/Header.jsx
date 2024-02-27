@@ -46,6 +46,7 @@ export default function Header() {
             width="40"
             height="40"
           />
+          <h4 className="header__burger-menu-title">{t("menu")}</h4>
         </div>
         <div className={`header__content ${isMenuOpen ? "open" : ""}`}>
           <div className="header__text-wrapper">

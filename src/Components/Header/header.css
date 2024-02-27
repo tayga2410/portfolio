@@ -29,6 +29,10 @@
   width: 100%;
 }
 
+.header__burger-menu-title {
+  display: none;
+}
+
 .header__text-wrapper {
   width: 264px;
 }
@@ -108,7 +112,7 @@
 
   .header__container {
     flex-direction: column;
-    max-width: 40px;
+    max-width: 107px;
     min-height: 40px;
     margin: 0;
     padding: 0;
@@ -116,6 +120,13 @@
     left: 50px;
     background-color: rgb(65, 102, 154);
     transition: max-width 1s ease-in-out;
+  }
+
+  .header__burger-menu-title {
+    display: block;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 0 7px;
   }
 
   .header__container.open {
