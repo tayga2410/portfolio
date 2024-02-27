@@ -3,7 +3,7 @@ footer {
 }
 
 .footer__container {
-  height: 80px;
+  min-height: 80px;
   color: rgb(7, 244, 244);
   background-color: rgba(207, 233, 254, 0.17);
   display: flex;
@@ -16,6 +16,7 @@ footer {
 .footer__list {
   display: flex;
   gap: 30px;
+  padding: 0;
 }
 
 .footer__link {
@@ -47,5 +48,16 @@ footer {
   .footer__copyright {
     font-size: 14px;
     width: 170px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__container {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .footer__copyright {
+    width: 140px;
   }
 }

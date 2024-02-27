@@ -37,3 +37,10 @@ button:active {
   border-radius: 16px;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 1439px) {
+  button {
+    width: 130px;
+  }
+}

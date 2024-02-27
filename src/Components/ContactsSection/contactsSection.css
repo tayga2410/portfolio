@@ -66,3 +66,13 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .contacts__text-link {
+    font-size: 12px;
+  }
+
+  .contacts__title {
+    font-size: 40px;
+  }
+}

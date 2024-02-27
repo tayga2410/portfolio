@@ -20,11 +20,9 @@ export default function PortfolioSection() {
         loop={true}
         spaceBetween={50}
         breakpoints={{
-          // when window width is >= 640px
           320: {
             slidesPerView: 1,
           },
-          // when window width is >= 768px
           768: {
             slidesPerView: 2,
           },

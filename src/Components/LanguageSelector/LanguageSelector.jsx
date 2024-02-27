@@ -4,7 +4,7 @@ import "./language-selector.css";
 import ruflag from "../../img/ru-logo.svg";
 import ukflag from "../../img/uk-logo.svg";
 
-function LanguageSelector() {
+function LanguageSelector({ closeMenu }) {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
@@ -15,6 +15,7 @@ function LanguageSelector() {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       changeLanguage(lng);
+      closeMenu(); 
     }
   };
 
