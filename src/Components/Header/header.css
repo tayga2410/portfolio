@@ -120,6 +120,7 @@
     left: 50px;
     background-color: rgb(65, 102, 154);
     transition: max-width 1s ease-in-out;
+    margin-top: 10px;
   }
 
   .header__burger-menu-title {
