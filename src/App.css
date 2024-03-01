@@ -6,6 +6,7 @@
   width: 100%;
   background-color: #0D1117;
   color: white;
+  background: url('../src/img/background-new.jpg') repeat;
 }
 
 .visually-hidden {
