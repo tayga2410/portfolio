@@ -7,6 +7,7 @@ import lifetour from "../../img/lifetour.png";
 import fitness from "../../img/fitness.png";
 import drink2go from "../../img/drink2go.png";
 import sedona from "../../img/sedona.png";
+import onegeli from '../../img/onegeli-project.png'
 import { useTranslation } from "react-i18next";
 
 export default function PortfolioSection() {
@@ -36,6 +37,19 @@ export default function PortfolioSection() {
         }}
         pagination={{ clickable: true }}
       >
+        <SwiperSlide>
+          <a
+            href="https://onegeli.kz"
+            target="_blank"
+          >
+            <img
+              className="portfolio__image"
+              src={onegeli}
+              alt="onegeli"
+            />
+          </a>
+          <h3 className="portfolio__swiper-title">{t("Onegeli")}</h3>
+        </SwiperSlide>
         <SwiperSlide>
           <a
             href="https://tayga2410.github.io/internship-project/"
