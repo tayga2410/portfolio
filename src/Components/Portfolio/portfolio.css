@@ -41,7 +41,7 @@
 
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  width: 124px;
+  width: 150px;
   margin: 0 auto;
   left: 50%;
 }
