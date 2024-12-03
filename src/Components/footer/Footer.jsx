@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="footer__socials">
           <a
             className="footer__logo-link"
-            href="https://www.linkedin.com/in/eldar-moldazhanov-2a142928a/"
+            href="https://www.linkedin.com/in/eldar-moldazhanov/"
             target="_blank"
           >
             <img
